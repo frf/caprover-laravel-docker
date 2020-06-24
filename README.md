@@ -23,6 +23,12 @@ I called some Docker lines
  }
 
 ```
+
+1. - Repository clone
+2. - Copy your Laravel project directory to the app folder
+3. - caprover deploy
+
+
 I do a basic copy files and the magic is in the run.sh
 
 Oh yes the shell is beautiful lol ..
