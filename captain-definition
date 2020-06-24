@@ -1,0 +1,14 @@
+ {
+  "schemaVersion" :2 ,
+  "dockerfileLines" :[
+                        "FROM  webdevops/php-nginx:7.3-alpine",
+                        "ENV PHP_MAX_EXECUTION_TIME 110",
+                        "ENV WEB_DOCUMENT_ROOT /app/public",
+                        "COPY --chown=www-data:www-data ./app /app2",
+                        "COPY ./php.ini opt/docker/etc/php/php.ini",
+                        "COPY ./run.sh /",
+                        "RUN chmod +x /run.sh",
+                        "RUN /run.sh"
+                    ]
+ }
+
